@@ -12,7 +12,7 @@ I noticed that there is a GET parameter called `flag` in the URL. So I tried to 
 
 ![Initial testing](./img/test.png "Initial testing")
 
-From this, we can assume that the characters in the `flag` parameter that match the flag will be displayed on the site. Thus, we can try to bruteforce the flag. We start by appending a single character to `shctf{`, trying all possible characters, and then checking whether the website display matches the input. I wrote a python script to do so: 
+From this, we can assume that the characters in the `flag` parameter that match the flag will be displayed on the site. Thus, we can try to bruteforce the flag. We start by appending a single character to `shctf{`, trying all possible characters, and then checking whether the website display matches the input. I wrote a [python script](./solve.py) to do so: 
 
 ```python
 import requests
